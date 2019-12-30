@@ -1,0 +1,80 @@
+html,
+body {
+    height: 100%;
+}
+
+body,
+html,
+div,
+a,
+p,
+span,
+ul,
+li,
+h1,
+h2,
+h3,
+input {
+    margin: 0;
+    padding: 0;
+}
+
+/* 谷歌滚动条 */
+body::-webkit-scrollbar {
+    width: 10px;
+    height: 1px;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: #535353;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background: #ccc;
+}
+
+body {
+    background: #face30;
+    background: linear-gradient(59deg, #face30 50%, #42d9f4 0%);
+    background: -webkit-linear-gradient(59deg, #face30 50%, #42d9f4 0%);
+    background: -moz-linear-gradient(59deg, #face30 50%, #42d9f4 0%);
+    background: -o-linear-gradient(59deg, #face30 50%, #42d9f4 0%);
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    /*超链接无下划线*/
+}
+
+input {
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
