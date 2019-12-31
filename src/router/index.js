@@ -1,30 +1,30 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '@/views/nav'
-import Login from '@/views/login'
+import adminHome from '@/views/nav'
+import adminLogin from '@/views/login'
 import notfount from '@/views/notfount'
-import Xuan1 from '@/views/xuan1'
+import adminXuan1 from '@/views/xuan1'
 
 Vue.use(VueRouter)
 
 const router = new VueRouter({
   routes: [
     {
-      path: '/',
-      name: 'home',
-      component: Home,
+      path: '/admin/',
+      name: 'adminHome',
+      component: adminHome,
       children: [
         {
-          path: '/xuan1',
-          name: 'xuan1',
-          component: Xuan1
+          path: '/admin/xuan1',
+          name: 'adminXuan1',
+          component: adminXuan1
         }
       ]
     },
     {
-      path: '/login',
-      name: 'login',
-      component: Login
+      path: '/admin/login',
+      name: '/adminLogin',
+      component: adminLogin
     },
     {
       path: '*',
