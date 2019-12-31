@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import adminHome from '@/views/nav'
-import adminLogin from '@/views/login'
-import notfount from '@/views/notfount'
-import adminXuan1 from '@/views/xuan1'
+import adminHome from '@/admin/nav'
+import adminLogin from '@/admin/login'
+import notfount from '@/admin/notfount'
+import adminVideo from '@/admin/video'
 
 Vue.use(VueRouter)
 
@@ -15,9 +15,9 @@ const router = new VueRouter({
       component: adminHome,
       children: [
         {
-          path: '/admin/xuan1',
-          name: 'adminXuan1',
-          component: adminXuan1
+          path: '/admin/video',
+          name: 'adminVideo',
+          component: adminVideo
         }
       ]
     },
